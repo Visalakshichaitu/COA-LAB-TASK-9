@@ -31,13 +31,7 @@ digits_equal:
 MOV DX, OFFSET msg_equal  
 MOV AH, 09h       
 INT 21h            
-end_program:
-; Print a new line (CRLF)
-MOV DL, 0Dh        
-MOV AH, 02h
-INT 21h           
-MOV DL, 0Ah        
-INT 21h            
+end_program:          
 ; Terminate the program
 MOV AH, 4Ch        
 INT 21h          
